@@ -1,14 +1,7 @@
 from random import randint
 from pygame import *
 init()
-
-C_WHITE = (255, 255, 255)
-C_RED = (255, 0, 0)
-C_GREEN = (0, 255, 0)
-C_BLACK = (0, 0, 0)
-C_FLOOR = (12, 17, 34)
-C_WALLS = (86, 4, 1)
-
+sdzxfz
 big_font = font.SysFont("Corbel", 72, True)
 regular_font = font.SysFont("Corbel", 45, True)
 
@@ -22,7 +15,7 @@ delayer = time.Clock()
 mixer.music.load('sounds/ambience.wav') # фоновые звуки леса
 mixer.music.set_volume(.7)
 mixer.music.play(-1) # -1 - повторять бесконечно
-
+zxcvxc
 pistol_sounds = [mixer.Sound('sounds/pistol-fire-1.ogg'),mixer.Sound('sounds/pistol-fire-2.ogg')]
 shotgun_sounds = [mixer.Sound('sounds/shotgun-fire-1.ogg'), mixer.Sound('sounds/shotgun-fire-2.ogg')]
 pistol_reload = mixer.Sound('sounds/reload-pistol.ogg')
@@ -65,14 +58,14 @@ class Hero(sprite.Sprite):
         self.counter = 0
         self.pistol_clip = 6
         self.shotgun_clip = 2
-    
-    def update_direction(self, direction):
+    zxcvxczv
+    def updazte_direction(self, direction):
         if self.direction != direction:
             self.direction = direction
         
     def gravitate(self):
         self.y_speed += .25
-    
+    zxcv
     def jump(self, y):
         if self.stands_on:
             self.y_speed = y
